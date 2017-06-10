@@ -1,0 +1,305 @@
+/* {
+   outline: 1px solid red !important;
+}*/
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background: white;
+}
+
+body {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    width: 90%;
+    margin: 0 auto;
+    }
+
+th, td {
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+}
+
+
+.header {
+    max-width: 1500px;
+    width: 100%;
+    color:white;
+    display: -webkit-flex;
+	display: flex;
+    flex-wrap: wrap;
+    background-color: #dcdada;
+    background-image: url("_backgrounds/cloudy.jpg");
+    border: 2px groove grey;
+    padding-bottom: 10px;
+
+}
+
+h1 {
+    font-family: 'Fredericka the Great', sans-serif;
+    text-align: center;
+    color: #f5f1ee;
+    font-size: 48px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-weight: normal;
+    text-shadow: 2px 2px 7px #111111;
+}
+
+h2, h3 {
+    font-family: 'Kanit';
+    font-weight: normal;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.courselist h4 {
+  margin-top: 4px;
+  margin-bottom: 6px;
+  font-size: 1em;
+  color: #252722;
+  font-style: italic;
+
+}
+
+.flow-right {
+
+    float:right;
+}
+
+.education {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 0px;
+    margin-left: 10px;
+    font-size: 1em;
+}
+
+.workplace h4 {
+    margin-bottom:7px;
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+h4 {
+
+    font-weight: normal;
+}
+
+/*.photo {
+    width: 25%;
+    padding: 10px;
+    display:table-cell;
+    vertical-align:middle;
+    text-align:center;
+}*/
+
+.headertext {
+    width: 100%;
+}
+
+.profilefoto {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+    border: 5px groove grey;
+    margin-top: 10px;
+}
+
+.flowright {
+    float: right;
+    padding-bottom: 20px;
+    padding-left:20px;
+}
+
+address {
+    text-align: center;
+    font-family: inherit;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border-bottom: 5px solid black;
+}
+
+.summary {
+    text-align: center;
+    padding: 30px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    font-family: inherit;
+    font-size: 17px;
+    line-height: 2em;
+}
+
+main {
+    padding: 30px;
+    padding-top: 10px;
+
+}
+
+.menu {
+    list-style: none;
+    list-style-type: none;
+    padding: 10px 20px;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    float: left;
+    margin-top: 20px;
+
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #7F7F42;
+}
+
+.menu a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+    font-family: inherit;
+    padding: 8px 16px;
+    border: solid grey 2px;
+    border-radius: 12px;
+    background-color: rgb(59, 49, 47);
+}
+
+.menu a:hover {
+    color: #E2E276;
+}
+
+p {
+    line-height: 130%;
+    text-align: justify;
+    font-size: 17px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.intro {
+    font-family: 'Quicksand';
+    padding: 20px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+    text-indent: 1em;
+    text-align: justify;
+    font-size: 15px;
+}
+
+p a {
+    color: #9e26b3;
+}
+
+
+
+blockquote {
+    border: 2px solid grey;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+aside {
+    font-size: 16px;
+    font-family: /*'Cabin', sans-serif;*/inherit;
+    padding: 20px;
+    line-height: 1.6em;
+    margin-top: 0px;
+    float: right;
+    width: 40%;
+    border:1px solid grey;
+    border-radius: 10px;
+}
+
+
+.workplace, .courses, .projects {
+    border: solid grey 1px;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.projects {
+   color: #374908;
+    border: solid grey 1px;
+
+}
+
+.projects a:hover {
+color: #252E2E;
+}
+
+.courselist a {
+text-decoration: none;
+color: inherit;
+}
+
+.courselist a:hover {
+    color: #756c63;
+}
+
+.courselist li {
+    padding-top: 3px;
+}
+
+.no-bullet {
+
+    margin: 0px;
+    list-style-type: none;
+    padding: 0px;
+
+}
+
+.uni {
+    margin-top: 15px;
+    line-height: 1.5em;
+}
+
+table {
+
+padding: 5px;
+}
+
+td, th {
+    vertical-align: top;
+    width: 150px;
+
+}
+
+.freeCodeCamp-list {
+    line-height: 1.2em;
+}
+
+.course-table td {
+    padding: 2px;
+}
+
+footer {
+    margin: 20px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width:700px) {
+    .menu {
+        display:none;
+    }
+}

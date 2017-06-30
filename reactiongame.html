@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JavaScript</title>
+    <style type="text/css">
+#circle {
+
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    font-size:20px;
+    line-height:100px;
+    text-align:center;
+    float: left;
+    margin: 10px;
+    background-color: black;
+    display: none;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+</style>
+
+    </head>
+
+    <body>
+
+<h1>Test your Reactions!</h1>
+<p>Click on the boxes and circles as quickly as you can!</p>
+
+<p>Your reaction: <span id="timeNeeded"></span></p>
+
+<div id="circle"></div>
+
+        <script type="text/javascript">
+
+        //defining arrays
+var myColors = ["green", "blue", "red", "purple", "orange", "black"];
+var myShape = ["50px", "inherit"];
+var myPosition = ["50px", "100px", "150px", "200px", "250px", "300px", "350px"];
+var mySize = ["60px", "90px", "130px", "160px;"];
+
+// defining variables
+
+var circle = document.getElementById("circle");
+
+var start = new Date().getTime();
+var end = new Date().getTime();
+
+var randColor = "";
+var randShape = "";
+var randPosT = "";
+var randPosL = "";
+var randSize = "";
+
+//defining function to pick random shape and position
+
+function pickStuff() {
+randColor = myColors[Math.floor(Math.random() * myColors.length)];
+randShape = myShape[Math.floor(Math.random() * myShape.length)];
+randPosT = myPosition[Math.floor(Math.random() * myPosition.length)];
+randPosL = myPosition[Math.floor(Math.random() * myPosition.length)];
+randSize = mySize[Math.floor(Math.random() * mySize.length)];
+}
+
+// defining function: Assign the color and shape of the box
+function setStyle() {
+
+     circle.style.backgroundColor = randColor;
+     circle.style.borderRadius = randShape;
+     circle.style.top = randPosT;
+     circle.style.left = randPosL;
+     circle.style.width = randSize;
+     circle.style.height = randSize;
+}
+
+//defining funtion to make shape re-appear and start timer
+function makeShapeAppear() {
+
+     circle.style.display = "block";
+     start = new Date().getTime();
+}
+
+
+function delayedAppearance() {
+
+pickStuff();
+setStyle();
+setTimeout(makeShapeAppear, Math.random() * 2000);
+
+}
+
+// program starts running
+
+
+delayedAppearance();
+
+
+// Clicking the button
+   document.getElementById("circle").onclick = function() {
+
+          document.getElementById("circle").style.display = "none";
+          var end = new Date().getTime();
+          var timeTaken = (end - start) / 1000;
+
+     document.getElementById("timeNeeded").innerHTML = timeTaken + " s";
+
+
+     delayedAppearance();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>

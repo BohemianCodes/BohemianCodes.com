@@ -37,7 +37,7 @@ th {
 	display: flex;
     flex-wrap: wrap;
     background-color: #dcdada;
-    background-image: url("_backgrounds/cloudy.jpg");
+    background-image: url("backgrounds/cloudy.jpg");
 	background-size: cover;
     border: 2px groove grey;
     padding-bottom: 10px;

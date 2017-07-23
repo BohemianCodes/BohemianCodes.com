@@ -295,6 +295,10 @@ td, th {
     padding: 2px;
 }
 
+.smallcaps {
+    font-size: 14px;
+}
+
 footer {
     margin: 20px;
     font-weight: bold;
@@ -305,3 +309,4 @@ footer {
         display:none;
     }
 }
+
